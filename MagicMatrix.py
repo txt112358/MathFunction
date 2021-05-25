@@ -23,7 +23,6 @@ def make_odd_magic_matrix(num: int)->list:
             return x - num
         else:
             return x
-        return tuple(set_index(num, x), set_index(num, y))
     def get_bottom_index(num: int, x: int, y: int):
         '''Return the top index of the matrix if the index is out of the boundary.
         
