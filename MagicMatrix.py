@@ -65,10 +65,6 @@ def make_odd_magic_matrix(num: int)->list:
             result[x][y] = i
     return result
 
-
-
-
-
 def make_4m_magic_matrix(num: int)->list:
     '''Construct a magic matrix with 4M row/column.
     
@@ -116,10 +112,6 @@ def make_4m_magic_matrix(num: int)->list:
                 row.append(get_ordered_value_by_index(num, tmp_x, tmp_y))
         result.append(row)
     return result
-
-
-
-
 
 def make_4m_2_magic_matrix(num:int)->list:
     '''Construct a 4M+2 row/column magic matrix.
@@ -195,10 +187,6 @@ def make_4m_2_magic_matrix(num:int)->list:
             result[2 * i + 1][2 * j] = m_matrix[i][j] * 4 - 4 + get_offset(get_symbol(num/2, i, j), 2)
             result[2 * i + 1][2 * j + 1] = m_matrix[i][j] * 4 - 4 + get_offset(get_symbol(num/2, i, j), 3)
     return result
-
-
-
-
 
 def make_magic_matrix(num:int)->list:
     '''Get the magic matrix.
