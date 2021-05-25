@@ -178,10 +178,6 @@ def make_4m_2_magic_matrix(num:int)->list:
     # Loop the m_matrix.
     for i in range(int(num/2)):
         for j in range(int(num/2)):
-            if i == 0 and j == 2:
-                print(get_symbol(num/2, i, j))
-                print(get_offset(get_symbol(num/2, i, j), 0))
-                print(get_offset(get_symbol(num/2, i, j), 0))
             result[2 * i][2 * j] = m_matrix[i][j] * 4 - 4 + get_offset(get_symbol(num/2, i, j), 0)
             result[2 * i][2 * j + 1] = m_matrix[i][j] * 4 - 4 + get_offset(get_symbol(num/2, i, j), 1)
             result[2 * i + 1][2 * j] = m_matrix[i][j] * 4 - 4 + get_offset(get_symbol(num/2, i, j), 2)
