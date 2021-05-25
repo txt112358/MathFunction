@@ -87,7 +87,7 @@ def make_4m_magic_matrix(num: int)->list:
              y: column index of the matrix.
         
         Returns:
-            a value in the given position.'''
+            A value in the given position.'''
         return x * num + y + 1
     def get_central_symmetry_index(num:int, x:int, y:int)->tuple:
         '''Return the central symmetrical index of the given index.
