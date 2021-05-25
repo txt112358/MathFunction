@@ -1,9 +1,5 @@
 import math
 
-
-
-
-
 def make_odd_magic_matrix(num: int)->list:
     '''Construct a magic matrix with odd column/row number.
     
@@ -224,7 +220,3 @@ def make_magic_matrix(num:int)->list:
             return make_4m_magic_matrix(num)
         else:
             return make_4m_2_magic_matrix(num)
-
-
-
-
